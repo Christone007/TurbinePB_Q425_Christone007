@@ -1,3 +1,9 @@
+use std::io;
+
 fn main() {
-    println!("Hello, world!");
+    let mut guess: String = String::from("start");
+
+    io::stdin().read_line(&mut guess);
+
+    println!("The guess is {guess}");
 }
