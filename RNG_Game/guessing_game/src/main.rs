@@ -23,7 +23,7 @@ fn main() {
     The bomb is locked with a number between 0 and 100.
     You must guess the correct code {player_name}
 
-    YOU HAVE ONLY 10 attempts
+    YOU HAVE ONLY {no_of_attempts} attempts
     The world looks up to you!\n\n\n"
     );
 
@@ -51,7 +51,7 @@ fn main() {
             Ordering::Equal => {
                 println!(
                     "✅ CODE MATCHED
-                BOMB DETONATED SUCCESSFULLY!\n\n"
+                    BOMB DETONATED SUCCESSFULLY!\n\n"
                 );
                 detonated = true;
                 break;
@@ -63,7 +63,8 @@ fn main() {
         println!(
             "🟢🟢🟢 MISSION ACCOMPLISHED! 🟢🟢🟢
 
-            Congratulations Soldier! You have saved entire communities and livelihoods.
+            Congratulations {player_name}!
+            Through your bravery and genius, entire communities and livelihoods have been saved!.
 
         WELL DONE!"
         );
